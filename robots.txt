@@ -2,3 +2,13 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.arnaugris.es/sitemap.xml
+
+# LLMs
+User-agent: GPTBot
+Allow: /llms.txt
+
+User-agent: ClaudeBot
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /llms.txt

@@ -1,0 +1,18 @@
+# Arnau Gris Garcia
+
+> Personal portfolio and CV of Arnau Gris García, Embedded Software Engineer based in Badalona, Barcelona (Spain). Specializes in C/C++, embedded systems for ARM microcontrollers, cybersecurity, and Java. Currently working at Giesecke + Devrient and pursuing a Master's in Cybersecurity at UPC.
+
+## Sections
+
+- [About](https://www.arnaugris.es/#about): Personal introduction and contact details (email, phone, location).
+- [Skills](https://www.arnaugris.es/#skills): Technical skills (Java, Python, C/C++, SQL, MongoDB) and soft skills (leadership, teamwork, server management, networking).
+- [Experience](https://www.arnaugris.es/#experience): Work history — Embedded Software Engineer at Giesecke + Devrient (2023–present), Web Developer at Celler de Badalona (2019–2023), CEO at VirtualPlanet gaming platform (2015–2020).
+- [Education](https://www.arnaugris.es/#education): Computer Science degree from Universitat de Barcelona (2018–2022), Master in Cybersecurity at UPC (2022–present), TryHackMe Penetration Testing course.
+- [Portfolio](https://www.arnaugris.es/#portfolio): Web projects — Celler de Badalona website, Ubending university demo (Flask/Angular), 2SmartHome corporate site (smart home company in Barcelona).
+
+## Contact
+
+- Email: arnau.gris@gmail.com
+- LinkedIn: https://www.linkedin.com/in/arnau-gris-garc%C3%ADa-ab372115a/
+- GitHub: https://github.com/DarkDhz
+- Kaggle: https://www.kaggle.com/arnaugrisgarcia
