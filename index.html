@@ -45,10 +45,10 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"/>
     </noscript>
-    <link href="css/font-awesome/css/all.min.css?ver=1.2.2" rel="stylesheet">
-    <link href="css/mdb.min.css?ver=1.2.2" rel="stylesheet">
-    <link href="css/aos.css?ver=1.2.2" rel="stylesheet">
-    <link href="css/main.css?ver=1.2.2" rel="stylesheet">
+    <link href="css/font-awesome/css/all.min.css?ver=1.2.3" rel="stylesheet">
+    <link href="css/mdb.min.css?ver=1.2.3" rel="stylesheet">
+    <link href="css/aos.css?ver=1.2.3" rel="stylesheet">
+    <link href="css/main.css?ver=1.2.3" rel="stylesheet">
     <script type='application/ld+json'>
       {
         "@context": "https://schema.org",
@@ -105,23 +105,30 @@
       <div class="container text-center text-lg-left">
         <div class="pt-4 clearfix">
           <h1 class="site-title mb-0">Arnau Gris Garcia</h1>
-          <div class="site-nav"> 
+          <div class="site-nav">
             <nav role="navigation">
               <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title">About</span></a>
+                <li class="nav-item"><a class="nav-link" href="#about" title="About"><span class="menu-title" data-i18n="nav.about">About</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title">Skills</span></a>
+                <li class="nav-item"><a class="nav-link" href="#skills" title="Skills"><span class="menu-title" data-i18n="nav.skills">Skills</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title">Experience</span></a>
+                <li class="nav-item"><a class="nav-link" href="#experience" title="Experience"><span class="menu-title" data-i18n="nav.experience">Experience</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title">Education</span></a>
+                <li class="nav-item"><a class="nav-link" href="#education" title="Education"><span class="menu-title" data-i18n="nav.education">Education</span></a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title">Portfolio</span></a>
+                <li class="nav-item"><a class="nav-link" href="#portfolio" title="Portfolio"><span class="menu-title" data-i18n="nav.portfolio">Portfolio</span></a>
                 </li>
                 <!--<li class="nav-item"><a class="nav-link" href="#references" title="References"><span class="menu-title">References</span></a>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#contact" title="Contact"><span class="menu-title">Contact</span></a>
                 </li>-->
+                <li class="nav-item ms-3">
+                  <span class="lang-switcher">
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="ca">CA</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                  </span>
+                </li>
               </ul>
             </nav>
           </div>
@@ -140,7 +147,7 @@
             <div class="header-bio mt-3">
               <div data-aos="zoom-in" data-aos-delay="0">
                 <h2 class="h1">Arnau Gris Garcia</h2>
-                <p>Embedded Software Developer at Giesecke + Devrient</p>
+                <p data-i18n="hero.subtitle">Embedded Software Developer at Giesecke + Devrient</p>
               </div>
               <div class="header-social mb-3 d-print-none" data-aos="zoom-in" data-aos-delay="200">
                 <nav role="navigation">
@@ -160,7 +167,7 @@
                   </ul>
                 </nav>
               </div>
-              <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="cv/cv_english.pdf" data-aos="fade-right" data-aos-delay="700">Download CV</a><a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700">Hire Me</a></div>
+              <div class="d-print-none"><a class="btn btn-outline-light btn-lg shadow-sm mt-1 me-3" href="cv/cv_english.pdf" data-aos="fade-right" data-aos-delay="700" data-i18n="hero.download">Download CV</a><a class="btn btn-info btn-lg shadow-sm mt-1" href="#contact" data-aos="fade-left" data-aos-delay="700" data-i18n="hero.hire">Hire Me</a></div>
             </div>
           </div>
         </div>
@@ -171,32 +178,32 @@
     <div class="about-section">
       <div class="row">
         <div class="col-md-6">
-          <h2 class="h2 fw-light mb-4">About Me</h2>
-          <p>I am Arnau Gris García, at 15 I discovered my passion on computing science when I was able to combine a game that I loved with programming, since then I have not stopped learning new things to improve every day in this field.</p>
+          <h2 class="h2 fw-light mb-4" data-i18n="about.title">About Me</h2>
+          <p data-i18n="about.text">I am Arnau Gris García, at 15 I discovered my passion on computing science when I was able to combine a game that I loved with programming, since then I have not stopped learning new things to improve every day in this field.</p>
         </div>
         <div class="col-md-5 offset-lg-1">
           <div class="row mt-2">
-            <h2 class="h2 fw-light mb-4">Bio</h2>
+            <h2 class="h2 fw-light mb-4" data-i18n="bio.title">Bio</h2>
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Age</div>
+              <div class="pb-2 fw-bolder"><i class="far fa-calendar-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> <span data-i18n="bio.age">Age</span></div>
             </div>
             <div class="col-sm-7">
               <div class="pb-2" id="age-value">25</div>
             </div>
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Email</div>
+              <div class="pb-2 fw-bolder"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> <span data-i18n="bio.email">Email</span></div>
             </div>
             <div class="col-sm-7">
               <div class="pb-2"><a href="mailto:arnau.gris@gmail.com">arnau.gris@gmail.com</a></div>
             </div>
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Phone</div>
+              <div class="pb-2 fw-bolder"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> <span data-i18n="bio.phone">Phone</span></div>
             </div>
             <div class="col-sm-7">
               <div class="pb-2"><a href="tel:+34684302922">+34 684 30 29 22</a></div>
             </div>
             <div class="col-sm-5">
-              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> Address</div>
+              <div class="pb-2 fw-bolder"><i class="fas fa-map-marker-alt pe-2 text-muted" style="width:24px;opacity:0.85;"></i> <span data-i18n="bio.address">Address</span></div>
             </div>
             <div class="col-sm-7">
               <div class="pb-2">08912 Badalona, Barcelona, Spain</div>
@@ -208,10 +215,10 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5" id="skills">
     <div class="skills-section">
-      <h2 class="h2 fw-light mb-4">Professional Skills</h2>
+      <h2 class="h2 fw-light mb-4" data-i18n="skills.title">Professional Skills</h2>
       <div class="row">
         <div class="col-md-4 mb-4">
-          <h6 class="fw-bolder text-uppercase text-muted mb-3">Programming</h6>
+          <h6 class="fw-bolder text-uppercase text-muted mb-3" data-i18n="skills.programming">Programming</h6>
           <span class="badge bg-info rounded-pill me-1 mb-2">C/C++</span>
           <span class="badge bg-info rounded-pill me-1 mb-2">Java</span>
           <span class="badge bg-info rounded-pill me-1 mb-2">Python</span>
@@ -219,7 +226,7 @@
           <span class="badge bg-info rounded-pill me-1 mb-2">MongoDB</span>
         </div>
         <div class="col-md-4 mb-4">
-          <h6 class="fw-bolder text-uppercase text-muted mb-3">Systems &amp; Security</h6>
+          <h6 class="fw-bolder text-uppercase text-muted mb-3" data-i18n="skills.systems">Systems &amp; Security</h6>
           <span class="badge bg-secondary rounded-pill me-1 mb-2">Embedded Systems</span>
           <span class="badge bg-secondary rounded-pill me-1 mb-2">ARM Microcontrollers</span>
           <span class="badge bg-secondary rounded-pill me-1 mb-2">Linux</span>
@@ -228,7 +235,7 @@
           <span class="badge bg-secondary rounded-pill me-1 mb-2">Git</span>
         </div>
         <div class="col-md-4 mb-4">
-          <h6 class="fw-bolder text-uppercase text-muted mb-3">Soft Skills</h6>
+          <h6 class="fw-bolder text-uppercase text-muted mb-3" data-i18n="skills.soft">Soft Skills</h6>
           <span class="badge bg-success rounded-pill me-1 mb-2">Leadership</span>
           <span class="badge bg-success rounded-pill me-1 mb-2">Teamwork</span>
           <span class="badge bg-success rounded-pill me-1 mb-2">Agile / Scrum</span>
@@ -239,81 +246,81 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5" id="languages">
     <div class="languages-section">
-      <h2 class="h2 fw-light mb-4">Languages</h2>
+      <h2 class="h2 fw-light mb-4" data-i18n="languages.title">Languages</h2>
       <div class="row">
         <div class="col-sm-4 mb-3">
-          <div class="fw-bolder mb-1">Catalan</div>
-          <span class="badge bg-info rounded-pill">Native</span>
+          <div class="fw-bolder mb-1" data-i18n="languages.catalan">Catalan</div>
+          <span class="badge bg-info rounded-pill" data-i18n="languages.native">Native</span>
         </div>
         <div class="col-sm-4 mb-3">
-          <div class="fw-bolder mb-1">Spanish</div>
-          <span class="badge bg-info rounded-pill">Native</span>
+          <div class="fw-bolder mb-1" data-i18n="languages.spanish">Spanish</div>
+          <span class="badge bg-info rounded-pill" data-i18n="languages.native">Native</span>
         </div>
         <div class="col-sm-4 mb-3">
-          <div class="fw-bolder mb-1">English</div>
-          <span class="badge bg-secondary rounded-pill">Professional (B2)</span>
+          <div class="fw-bolder mb-1" data-i18n="languages.english">English</div>
+          <span class="badge bg-secondary rounded-pill" data-i18n="languages.professional">Professional (B2)</span>
         </div>
       </div>
     </div>
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5" id="experience">
     <div class="work-experience-section">
-      <h2 class="h2 fw-light mb-4">Work Experience</h2>
+      <h2 class="h2 fw-light mb-4" data-i18n="exp.title">Work Experience</h2>
       <div class="timeline">
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="0">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Embedded Software Engineer <span class="text-muted h6">at Giesecke &amp; Devrient</span></div>
+            <div class="h5"><span data-i18n="exp.gd.role">Embedded Software Engineer</span> <span class="text-muted h6" data-i18n="exp.gd.at">at Giesecke &amp; Devrient</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">Feb, 2023 - Present</div>
+            <div class="text-muted text-small mb-3" data-i18n="exp.gd.date">Feb, 2023 - Present</div>
             <ul>
-              <li>Development of embedded software for ARM-based microcontrollers using C/C++.</li>
-              <li>Implementation of OS features, drivers, and communication interfaces.</li>
-              <li>Application of Agile methodologies (Scrum) in cross-functional teams.</li>
-              <li>Creation of unit and integration tests using TDD principles.</li>
-              <li>Development of Java applets and related APIs.</li>
-              <li>Version control and collaboration using Git.</li>
+              <li data-i18n="exp.gd.li1">Development of embedded software for ARM-based microcontrollers using C/C++.</li>
+              <li data-i18n="exp.gd.li2">Implementation of OS features, drivers, and communication interfaces.</li>
+              <li data-i18n="exp.gd.li3">Application of Agile methodologies (Scrum) in cross-functional teams.</li>
+              <li data-i18n="exp.gd.li4">Creation of unit and integration tests using TDD principles.</li>
+              <li data-i18n="exp.gd.li5">Development of Java applets and related APIs.</li>
+              <li data-i18n="exp.gd.li6">Version control and collaboration using Git.</li>
             </ul>
           </div>
         </div>
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="200">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Waiter and Web Developer <span class="text-muted h6">at Celler de Badalona</span></div>
+            <div class="h5"><span data-i18n="exp.celler.role">Waiter and Web Developer</span> <span class="text-muted h6" data-i18n="exp.celler.at">at Celler de Badalona</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2019 - 2023</div>
+            <div class="text-muted text-small mb-3" data-i18n="exp.celler.date">2019 - 2023</div>
             <ul>
-              <li>Responsible for customer service, order management, and payment processing.</li>
-              <li>Managed the restaurant's website, SSL certificate, and domain services.</li>
-              <li>Designed, developed, and maintained a responsive company website to enhance online presence: <a href="https://cellerdebadalona.es">https://cellerdebadalona.es</a></li>
+              <li data-i18n="exp.celler.li1">Responsible for customer service, order management, and payment processing.</li>
+              <li data-i18n="exp.celler.li2">Managed the restaurant's website, SSL certificate, and domain services.</li>
+              <li><span data-i18n="exp.celler.li3">Designed, developed, and maintained a responsive company website to enhance online presence: </span><a href="https://cellerdebadalona.es">https://cellerdebadalona.es</a></li>
             </ul>
           </div>
         </div>
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="400">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">CEO <span class="text-muted h6">at VirtualPlanet</span></div>
+            <div class="h5"><span data-i18n="exp.vp.role">CEO</span> <span class="text-muted h6" data-i18n="exp.vp.at">at VirtualPlanet</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2015 - 2020</div>
+            <div class="text-muted text-small mb-3" data-i18n="exp.vp.date">2015 - 2020</div>
             <ul>
-              <li>Created and managed a Minecraft hosting and gaming platform.</li>
-              <li>Designed the business model and digital marketing strategy.</li>
-              <li>Oversaw sales, customer support, and billing processes.</li>
-              <li>Administered Linux servers (Debian/Ubuntu), including firewall (IPTables/UFW) configuration.</li>
-              <li>Managed MySQL databases and implemented backend connections with JDBC.</li>
-              <li>Deployed and maintained dedicated servers and web infrastructure.</li>
-              <li>Web: <a href="https://virtualplanet.es/">https://virtualplanet.es/</a></li>
+              <li data-i18n="exp.vp.li1">Created and managed a Minecraft hosting and gaming platform.</li>
+              <li data-i18n="exp.vp.li2">Designed the business model and digital marketing strategy.</li>
+              <li data-i18n="exp.vp.li3">Oversaw sales, customer support, and billing processes.</li>
+              <li data-i18n="exp.vp.li4">Administered Linux servers (Debian/Ubuntu), including firewall (IPTables/UFW) configuration.</li>
+              <li data-i18n="exp.vp.li5">Managed MySQL databases and implemented backend connections with JDBC.</li>
+              <li data-i18n="exp.vp.li6">Deployed and maintained dedicated servers and web infrastructure.</li>
+              <li><span data-i18n="exp.vp.web">Web: </span><a href="https://virtualplanet.es/">https://virtualplanet.es/</a></li>
             </ul>
           </div>
         </div>
         <div class="timeline-card timeline-card-info" data-aos="fade-in" data-aos-delay="600">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Voluntary <span class="text-muted h6">at Salesians de Badalona</span></div>
+            <div class="h5"><span data-i18n="exp.vol.role">Voluntary</span> <span class="text-muted h6" data-i18n="exp.vol.at">at Salesians de Badalona</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">Jul, 2016 - Aug, 2016</div>
+            <div class="text-muted text-small mb-3" data-i18n="exp.vol.date">Jul, 2016 - Aug, 2016</div>
             <ul>
-              <li>In charge of a group of children on the summer course.</li>
+              <li data-i18n="exp.vol.li1">In charge of a group of children on the summer course.</li>
             </ul>
           </div>
         </div>
@@ -322,32 +329,32 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5" id="education">
     <div class="education-section">
-      <h2 class="h2 fw-light mb-4">Education</h2>
+      <h2 class="h2 fw-light mb-4" data-i18n="edu.title">Education</h2>
       <div class="timeline">
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="0">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Degree on Computer Science <span class="text-muted h6">from Universitat de Barcelona</span></div>
-            <div>Computer Science degree where I learned about all CS branches: cybersecurity, ML, AI, web development...</div>
+            <div class="h5"><span data-i18n="edu.cs.degree">Degree on Computer Science</span> <span class="text-muted h6" data-i18n="edu.cs.school">from Universitat de Barcelona</span></div>
+            <div data-i18n="edu.cs.desc">Computer Science degree where I learned about all CS branches: cybersecurity, ML, AI, web development...</div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2018 - 2022</div>
+            <div class="text-muted text-small mb-3" data-i18n="edu.cs.date">2018 - 2022</div>
             <!--<div>Learn about</div>-->
           </div>
         </div>
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="200">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">Master on Cybersecurity <span class="text-muted h6">at UPC</span></div>
+            <div class="h5"><span data-i18n="edu.master.degree">Master on Cybersecurity</span> <span class="text-muted h6" data-i18n="edu.master.school">at UPC</span></div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2022 - 2025</div>
+            <div class="text-muted text-small mb-3" data-i18n="edu.master.date">2022 - 2025</div>
           </div>
         </div>
         <div class="timeline-card timeline-card-success" data-aos="fade-in" data-aos-delay="400">
           <div class="timeline-head px-4 pt-3">
-            <div class="h5">TryHackMe Penetration Testing Course</div>
+            <div class="h5" data-i18n="edu.thm.name">TryHackMe Penetration Testing Course</div>
           </div>
           <div class="timeline-body px-4 pb-4">
-            <div class="text-muted text-small mb-3">2022</div>
+            <div class="text-muted text-small mb-3" data-i18n="edu.thm.date">2022</div>
           </div>
         </div>
       </div>
@@ -355,23 +362,23 @@
   </div>
   <div class="shadow-1-strong bg-white my-5 p-5 d-print-none" id="portfolio">
     <div class="portfolio-section">
-      <h2 class="h2 fw-light mb-4">Portfolio</h2>
+      <h2 class="h2 fw-light mb-4" data-i18n="portfolio.title">Portfolio</h2>
       <div class="row g-0">
         <div class="col-md-6"><a href="https://www.cellerdebadalona.es/" target="_blank"><img class="img-fluid" src="images/celler.PNG" width="800" height="500" alt="Celler de Badalona — Restaurant website project by Arnau Gris"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
-            <h3>Celler de badalona website</h3>
-            <p class="text-muted">Basic website for the restaurant where I work. Simple design oriented to elder and adults</p>
+            <p class="text-teal text-small" data-i18n="portfolio.celler.tech">Frontend / HTML / CSS / JavaScript</p>
+            <h3 data-i18n="portfolio.celler.title">Celler de badalona website</h3>
+            <p class="text-muted" data-i18n="portfolio.celler.desc">Basic website for the restaurant where I work. Simple design oriented to elder and adults</p>
           </div>
         </div>
       </div>
       <div class="row g-0 portfolio-reverse">
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
           <div class="m-4 mt-md-2 text-end">
-            <p class="text-teal text-small">Frontend / Backend / Python - Flask / Angular</p>
-            <h3>Ubending demo website</h3>
-            <p class="text-muted">No-responsible web demo for a university project from fourth course, developed using agile and scrum methodologies with a group of university mates.</p>
+            <p class="text-teal text-small" data-i18n="portfolio.ubending.tech">Frontend / Backend / Python - Flask / Angular</p>
+            <h3 data-i18n="portfolio.ubending.title">Ubending demo website</h3>
+            <p class="text-muted" data-i18n="portfolio.ubending.desc">No-responsible web demo for a university project from fourth course, developed using agile and scrum methodologies with a group of university mates.</p>
           </div>
         </div>
         <div class="col-md-6"><a href="https://ubendingdev.herokuapp.com/home" target="_blank"><img class="img-fluid" src="images/ubending.PNG" width="800" height="500" alt="Ubending — University project web demo by Arnau Gris"/></a></div>
@@ -380,9 +387,9 @@
         <div class="col-md-6"><a href="https://www.2smarthome.es/" target="_blank" rel="noopener"><img class="img-fluid" src="images/2smarthome.PNG" width="800" height="500" alt="2SmartHome - empresa de domótica en Barcelona"/></a></div>
         <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
           <div class="m-4 mt-md-2">
-            <p class="text-teal text-small">Frontend / Backend / Web Development</p>
-            <h3><a href="https://www.2smarthome.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">2SmartHome — Domótica en Barcelona</a></h3>
-            <p class="text-muted">Coorporative website for <a href="https://www.2smarthome.es/" target="_blank" rel="noopener">2SmartHome</a>, specialized business on SmartHome in Barcelona.</p>
+            <p class="text-teal text-small" data-i18n="portfolio.2sh.tech">Frontend / Backend / Web Development</p>
+            <h3><a href="https://www.2smarthome.es/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;" data-i18n="portfolio.2sh.title">2SmartHome — Domótica en Barcelona</a></h3>
+            <p class="text-muted"><span data-i18n="portfolio.2sh.desc">Coorporative website for </span><a href="https://www.2smarthome.es/" target="_blank" rel="noopener">2SmartHome</a><span data-i18n="portfolio.2sh.desc2">, specialized business on SmartHome in Barcelona.</span></p>
           </div>
         </div>
       </div>
@@ -392,7 +399,7 @@
   <!--<div class="shadow-1-strong bg-white my-5 p-5" id="references">
     <div class="reference-section">
       <h2 class="h2 fw-light mb-4">References</h2>
-      <div class="row"> 
+      <div class="row">
         <div class="col-md-6">
           <div class="d-flex mb-2">
             <div class="avatar"><img src="images/reference-image-1.jpg" width="60" height="60"/></div>
@@ -472,8 +479,8 @@
         </div>
       </div>
     </footer>
-    <script src="scripts/mdb.min.js?ver=1.2.2"></script>
-    <script src="scripts/aos.js?ver=1.2.2"></script>
-    <script src="scripts/main.js?ver=1.2.2"></script>
+    <script src="scripts/mdb.min.js?ver=1.2.3"></script>
+    <script src="scripts/aos.js?ver=1.2.3"></script>
+    <script src="scripts/main.js?ver=1.2.3"></script>
   </body>
 </html>

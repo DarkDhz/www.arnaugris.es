@@ -99,6 +99,33 @@ footer a:not(.nav-link) {
   text-decoration: none;
   cursor: pointer; }
 
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px; }
+
+.lang-btn {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: inherit;
+  opacity: 0.55;
+  cursor: pointer;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: opacity 0.15s, border-color 0.15s; }
+
+.lang-btn:hover {
+  opacity: 1; }
+
+.lang-btn.active {
+  opacity: 1;
+  border-color: var(--bs-info);
+  color: var(--bs-info); }
+
 @media (min-width: 48em) {
   .site-title {
     float: left; }
