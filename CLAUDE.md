@@ -18,7 +18,7 @@ npx http-server
 
 ## Architecture
 
-Single `index.html` file with anchor-based section navigation (`#about`, `#skills`, `#experience`, `#education`, `#portfolio`). All third-party libraries are vendored locally (no CDN for JS/CSS, except Google Fonts).
+Single `index.html` file with anchor-based section navigation (`#about`, `#skills`, `#languages`, `#experience`, `#education`, `#portfolio`). Note: `#languages` exists in the DOM but is **not** in the header nav — add it there if you want it scroll-spied. All third-party libraries are vendored locally (no CDN for JS/CSS, except Google Fonts).
 
 **Vendored libraries:**
 - `css/mdb.min.css` + `scripts/mdb.min.js` — Material Design Bootstrap (grid, components)
@@ -26,12 +26,14 @@ Single `index.html` file with anchor-based section navigation (`#about`, `#skill
 - `css/font-awesome/` — Font Awesome 6 icons
 
 **Custom code:**
-- `scripts/main.js` — only initializes AOS (`AOS.init({ anchorPlacement: 'top-left', duration: 1000 })`)
-- `css/main.css` — timeline layout, responsive breakpoints, and print/PDF styles
+- `scripts/main.js` — initializes AOS and runs a scroll-spy IIFE that adds `.active` to the matching header nav link as the user scrolls. The tracked section IDs are hardcoded: `['about', 'skills', 'experience', 'education', 'portfolio']` — update this array if sections are added/removed from the nav.
+- `css/main.css` — sticky header (with `box-shadow`), timeline layout, skill/language badge layout, responsive breakpoints, and print/PDF styles.
+
+**Skills & Languages sections:** Skills uses MDB `badge rounded-pill` tags grouped into three columns (Programming / Systems & Security / Soft Skills). Languages uses the same badge style. There are no progress bars — the `.progress-bar` CSS rule in `main.css` is vestigial and can be removed.
 
 ## Key details
 
-**Asset versioning:** Cache-busting via query strings (e.g., `?ver=1.2.2`). Current version is `1.2.2` — bump all four asset `<link>`/`<script>` tags in `<head>` whenever changing CSS or JS files.
+**Asset versioning:** Cache-busting via query strings (e.g., `?ver=1.2.2`). Current version is `1.2.2` — bump all seven asset `<link>`/`<script>` tags (4 in `<head>`, 3 at end of `<body>`) whenever changing CSS or JS files.
 
 **Print/PDF output:** `css/main.css` has `@media print` rules for PDF CV generation. The `d-print-none` class hides the header nav, portfolio section social links. The `.page-break` class forces a page break (`page-break-before: always`) for PDF layout. Do not break these when editing layout.
 
